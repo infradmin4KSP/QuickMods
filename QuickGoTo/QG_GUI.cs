@@ -187,7 +187,10 @@ namespace QuickGoTo
         {
             get
             {
-                rectButton.x = Screen.width - 90;
+                if (RP1isInstalled)
+                    rectButton.x = Screen.width - 120;
+                else
+                    rectButton.x = Screen.width - 90;
                 return rectButton;
             }
             set
@@ -260,6 +263,9 @@ namespace QuickGoTo
             GameEvents.onGUIRnDComplexSpawn.Add(RnDComplexSpawn);
             GameEvents.onGUIRnDComplexDespawn.Add(RnDComplexDespawn);
             GameEvents.onFlightReady.Add(OnFlightReady);
+
+            RP1isInstalled = SpaceTuxUtility.HasMod.hasMod("RP-0");
+
             Log("Awake", "QGUI");
         }
 
@@ -945,6 +951,7 @@ namespace QuickGoTo
             {
                 ToggleGoTo();
             }
+
             GUILayout.EndArea();
         }
     }

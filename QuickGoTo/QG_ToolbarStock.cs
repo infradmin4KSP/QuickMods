@@ -24,7 +24,12 @@ namespace QuickGoTo {
 
 	public partial class QStockToolbar {
 
-		ApplicationLauncher.AppScenes AppScenes = ApplicationLauncher.AppScenes.FLIGHT | ApplicationLauncher.AppScenes.MAPVIEW | ApplicationLauncher.AppScenes.SPACECENTER | ApplicationLauncher.AppScenes.SPH | ApplicationLauncher.AppScenes.TRACKSTATION | ApplicationLauncher.AppScenes.VAB;
+		ApplicationLauncher.AppScenes AppScenes =	ApplicationLauncher.AppScenes.FLIGHT | 
+													ApplicationLauncher.AppScenes.MAPVIEW | 
+													ApplicationLauncher.AppScenes.SPACECENTER | 
+													ApplicationLauncher.AppScenes.SPH | 
+													ApplicationLauncher.AppScenes.TRACKSTATION | 
+													ApplicationLauncher.AppScenes.VAB;
 		internal ApplicationLauncherButton appLauncherButton;
 
 		internal bool isActive {

@@ -19,6 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 using System.IO;
 using System.Reflection;
 using UnityEngine;
+using SpaceTuxUtility;
 
 namespace QuickGoTo
 {
@@ -32,6 +33,7 @@ namespace QuickGoTo
     public class QuickGoTo : MonoBehaviour
     {
         internal static string FileConfig;
+        public static bool RP1isInstalled = false;
 
         internal static void Log(string String, string Title = null, bool force = false)
         {
