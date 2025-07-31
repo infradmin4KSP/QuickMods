@@ -188,9 +188,9 @@ namespace QuickGoTo
             get
             {
                 if (RP1isInstalled)
-                    rectButton.x = Screen.width - 120;
+                    rectButton.x = Screen.width - 120 * Math.Max(1f, GameSettings.UI_SCALE);
                 else
-                    rectButton.x = Screen.width - 90;
+                    rectButton.x = Screen.width - 90 * Math.Max(1f, GameSettings.UI_SCALE);
                 return rectButton;
             }
             set
